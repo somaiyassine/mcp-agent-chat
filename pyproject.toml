@@ -1,0 +1,21 @@
+[project]
+name = "ai-assistant-with-mcp-servers"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "yassine somai", email = "yassinesomai10@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-groq>=1.2.1",
+    "mcp-use>=1.7.1",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+ai-assistant-with-mcp-servers = "ai_assistant_with_mcp_servers:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
